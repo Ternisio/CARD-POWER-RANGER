@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    max-width: 1440px;
+    background-color: rgb(51, 49, 49);
+
+}
+header{
+    width: 100% ;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+header img{
+    width: 40%;
+}
+.wraper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    
+}
+.Card{
+    width: 80px;
+    height: 320px;
+    background-size: cover;
+    border-radius: .75rem;
+    margin: 0 20px;
+    cursor: pointer;
+    overflow: hidden;
+        border-radius: 2rem;
+    display: flex;
+    align-items: flex-end;
+    border: none;
+    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+    box-shadow: 0px 10px 30px -5px rgb(255, 255, 255,0.3);
+}
+.Card  .row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.Card > .row > .icon{
+    background-color: black;
+    border-radius: 60%;
+    color: white;
+
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px
+
+}
+
+.Card  .row .desc{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  overflow: hidden;
+  height:100PX;
+  width: 450PX;
+  opacity: 0;
+
+      transform: translateY(30px);
+    transition-delay: 0.3s ;
+    transition: all 0.3  ease ;
+}
+.Card[for = "s6"] .row .desc .CENTRO h4{
+text-transform: uppercase;
+background-color: rgb(0, 0, 0, .7);
+width:180px;
+height: 40px;
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.Card[for = "s5"] .row .desc .CENTRO h4{
+text-transform: uppercase;
+background-color:rgb(246, 179, 190,0.8);
+width:180px;
+height: 40px;
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.Card[for = "s3"] .row .desc .CENTRO h4{
+text-transform: uppercase;
+background-color:rgba(0, 255, 4, 0.8);
+width:180px;
+height: 40px;
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.Card[for = "s1"] .row .desc .CENTRO h4{
+text-transform: uppercase;
+background-color:rgba(72, 0, 255, 0.7);
+width:180px;
+height: 40px;
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.Card[for = "s2"] .row .desc .CENTRO h4{
+text-transform: uppercase;
+background-color:rgb(255, 255, 0,.7);
+width:180px;
+height: 40px;
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.CENTRO{
+  width: 100%;  
+  display: flex;
+
+  justify-content: center;
+}
+.Card[for = "s4"] .row .desc .CENTRO h4{
+text-transform: uppercase;
+
+background-color:rgba(255, 0, 43,0.8);
+width:180px;
+height: 40px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+input{
+    display: none;
+}
+input:checked + label{
+    width: 600px;
+    background-position-x: 0;
+}
+input:checked + label .desc{
+    opacity: 1 !important; 
+    transform: translateY(0) !important;
+}
+
+.Card[for = "s1"]{
+    background-image: url(./Image/blue.jpeg); 
+    background-position-x: right
+}
+.Card[for = "s2"]{
+    background-image: url(./Image/yellow.jpeg);
+      background-position-x: right;
+}
+.Card[for = "s3"]{
+    background-image: url(./Image/green.jpeg);
+      background-position-x: right;
+}
+.Card[for = "s4"]{
+    background-image: url(./Image/red.jpeg);
+      background-position-x: right;
+}
+.Card[for = "s5"]{
+    background-image: url(./Image/pink.jpeg);
+      background-position-x: right;
+}
+.Card[for = "s2"]{
+    background-image: url(./Image/yellow.jpeg);
+      background-position-x: right;
+}.Card[for = "s6"]{
+    background-image: url(./Image/black.jpeg);
+      background-position-x: right;
+}
